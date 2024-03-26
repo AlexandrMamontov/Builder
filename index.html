@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конструктор благоустройств</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+
+    <div class="builder">
+        <div class="builder__container">
+            <!-- Блок с вкладками -->
+            <ul class="builder__header-list list-reset">
+                <li class="builder__header-item">Кладбище</li>
+                <li class="builder__header-item builder__header-item--active">Размер захоронения</li>
+                <li class="builder__header-item">Каталог</li>
+                <li class="builder__header-item">Конструктор</li>
+                <li class="builder__header-item">Избранное</li>
+            </ul>
+
+            <!-- Размер захоронения -->
+            <div class="builder__sizes sizes builder__block builder__block--active">
+                <ul class="sizes__list list-reset">
+                    <li class="sizes__item">
+                        <img src="img/razmer_zakhoroneniya.png" alt="" title="" class="sizes__img">
+                        <div class="sizes__wrapper">
+                            <input class="sizes__checkbox" type="checkbox" id="size1" name="size1" value="120">
+                            <label for="size1" class="sizes__value">Размер 120*120</label>
+                            <div class="sizes__options">
+                                <div class="sizes__option">
+                                    <input id="add5-1" type="radio" name="radio1" value="5">
+                                    <label for="add5-1">добавить +/-5см</label>
+                                </div>
+                                <div class="sizes__option">
+                                    <input id="add10-1" type="radio" name="radio1" value="10">
+                                    <label for="add10-1">добавить +/-10см</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sizes__item">
+                        <img src="img/razmer_zakhoroneniya.png" alt="" title="" class="sizes__img">
+                        <div class="sizes__wrapper">
+                            <input class="sizes__checkbox" type="checkbox" id="size2" name="size2" value="125">
+                            <label for="size2" class="sizes__value">Размер 125*125</label>
+                            <div class="sizes__options">
+                                <div class="sizes__option">
+                                    <input id="add5-2" type="radio" name="radio2" value="5">
+                                    <label for="add5-2">добавить +/-5см</label>
+                                </div>
+                                <div class="sizes__option">
+                                    <input id="add10-2" type="radio" name="radio2" value="10">
+                                    <label for="add10-2">добавить +/-10см</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sizes__item">
+                        <img src="img/razmer_zakhoroneniya.png" alt="" title="" class="sizes__img">
+                        <div class="sizes__wrapper">
+                            <input class="sizes__checkbox" type="checkbox" id="size3" name="size3" value="130">
+                            <label for="size3" class="sizes__value">Размер 130*130</label>
+                            <div class="sizes__options">
+                                <div class="sizes__option">
+                                    <input id="add5-3" type="radio" name="radio3" value="5">
+                                    <label for="add5-3">добавить +/-5см</label>
+                                </div>
+                                <div class="sizes__option">
+                                    <input id="add10-3" type="radio" name="radio3" value="10">
+                                    <label for="add10-3">добавить +/-10см</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sizes__item">
+                        <img src="img/razmer_zakhoroneniya.png" alt="" title="" class="sizes__img">
+                        <div class="sizes__wrapper">
+                            <input class="sizes__checkbox" type="checkbox" id="size4" name="size4" value="135">
+                            <label for="size4" class="sizes__value">Размер 135*135</label>
+                            <div class="sizes__options">
+                                <div class="sizes__option">
+                                    <input id="add5-4" type="radio" name="radio4" value="5">
+                                    <label for="add5-4">добавить +/-5см</label>
+                                </div>
+                                <div class="sizes__option">
+                                    <input id="add10-4" type="radio" name="radio4" value="10">
+                                    <label for="add10-4">добавить +/-10см</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="sizes__boxes list-reset">
+                    <li class="sizes__box box">
+                        <input class="box__checkbox" type="checkbox" id="size1.1" name="size1.1" value="120">
+                        <label for="size1.1" class="box__value">Размер 120*120</label>
+                    </li>
+                    <li class="sizes__box box">
+                        <input class="box__checkbox" type="checkbox" id="size2.1" name="size2.1" value="125">
+                        <label for="size2.1" class="box__value">Размер 125*125</label>
+                    </li>
+                    <li class="sizes__box box">
+                        <input class="box__checkbox" type="checkbox" id="size3.1" name="size3.1" value="130">
+                        <label for="size3.1" class="box__value">Размер 130*130</label>
+                    </li>
+                    <li class="sizes__box box">
+                        <input class="box__checkbox" type="checkbox" id="size4.1" name="size4.1" value="135">
+                        <label for="size4.1" class="box__value">Размер 135*135</label>
+                    </li>
+                    <li class="sizes__box box">
+                        <input class="box__checkbox" type="checkbox" id="size5.1" name="size5.1" value="140">
+                        <label for="size5.1" class="box__value">Размер 140*140</label>
+                    </li>
+                    <li class="sizes__box box">
+                        <input class="box__checkbox" type="checkbox" id="size6.1" name="size6.1" value="145">
+                        <label for="size6.1" class="box__value">Размер 145*145</label>
+                    </li>
+                    <li class="sizes__box box">
+                        <input class="box__checkbox" type="checkbox" id="size7.1" name="size7.1" value="150">
+                        <label for="size7.1" class="box__value">Размер 150*150</label>
+                    </li>
+                    <li class="sizes__box box">
+                        <input class="box__checkbox" type="checkbox" id="size8.1" name="size8.1" value="155">
+                        <label for="size8.1" class="box__value">Размер 155*155</label>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Блок с кнопками -->
+            <div class="builder__buttons">
+                <div class="sizes__count">
+                    Выбрано размеров: <span>0</span>
+                </div>
+                <a href="#" class="builder__prev builder__prev--default">
+                    <img src="img/arrow.svg" alt="" title="">
+                    назад
+                </a>
+                <a href="#" class="builder__next builder__next--default">
+                    далее
+                    <img src="img/arrow.svg" alt="" title="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
