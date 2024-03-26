@@ -42,11 +42,19 @@ document.addEventListener("DOMContentLoaded", function () {
     checkboxesBlock1.forEach(checkbox1 => {
         checkbox1.addEventListener('change', () => {
             const selectedValue = checkbox1.value;
-
             const matchingCheckbox = Array.from(checkboxesBlock2).find(checkbox2 => checkbox2.value === selectedValue);
-
             if (matchingCheckbox) {
                 matchingCheckbox.checked = checkbox1.checked;
+            }
+        });
+    });
+
+    checkboxesBlock2.forEach(checkbox2 => {
+        checkbox2.addEventListener('change', () => {
+            const selectedValue = checkbox2.value;
+            const matchingCheckbox = Array.from(checkboxesBlock1).find(checkbox1 => checkbox1.value === selectedValue);
+            if (matchingCheckbox) {
+                matchingCheckbox.checked = checkbox2.checked;
             }
         });
     });
