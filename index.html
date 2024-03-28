@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <script defer src="js/script.js"></script>
-    <!-- <script defer src="js/script2.js"></script> -->
+    <!-- <script defer src="js/script.js"></script> -->
+    <script defer src="js/script2.js"></script>
 </head>
 
 <body>
@@ -31,15 +31,15 @@
                     <li class="sizes__item">
                         <img src="img/razmer_zakhoroneniya.png" alt="" title="" class="sizes__img">
                         <div class="sizes__wrapper">
-                            <input class="sizes__checkbox" type="checkbox" id="size1" name="size1" data-length="120" data-width="120">
+                            <input class="sizes__checkbox" type="checkbox" id="size1" name="size1" data-id="1" data-length="120" data-width="120">
                             <label for="size1" class="sizes__value">Размер 120*120</label>
                             <div class="sizes__options">
                                 <div class="sizes__option">
-                                    <input id="add5-1" type="radio" name="radio1" value="5">
+                                    <input id="add5-1" type="radio" name="radio1" value="5" data-value="5">
                                     <label for="add5-1">добавить +/-5см</label>
                                 </div>
                                 <div class="sizes__option">
-                                    <input id="add10-1" type="radio" name="radio1" value="10">
+                                    <input id="add10-1" type="radio" name="radio1" value="10" data-value="10">
                                     <label for="add10-1">добавить +/-10см</label>
                                 </div>
                             </div>
@@ -48,15 +48,15 @@
                     <li class="sizes__item">
                         <img src="img/razmer_zakhoroneniya.png" alt="" title="" class="sizes__img">
                         <div class="sizes__wrapper">
-                            <input class="sizes__checkbox" type="checkbox" id="size2" name="size2" data-length="125" data-width="125">
+                            <input class="sizes__checkbox" type="checkbox" id="size2" name="size2" data-id="2" data-length="125" data-width="125">
                             <label for="size2" class="sizes__value">Размер 125*125</label>
                             <div class="sizes__options">
                                 <div class="sizes__option">
-                                    <input id="add5-2" type="radio" name="radio2" value="5">
+                                    <input id="add5-2" type="radio" name="radio2" value="5" data-value="5">
                                     <label for="add5-2">добавить +/-5см</label>
                                 </div>
                                 <div class="sizes__option">
-                                    <input id="add10-2" type="radio" name="radio2" value="10">
+                                    <input id="add10-2" type="radio" name="radio2" value="10" data-value="10">
                                     <label for="add10-2">добавить +/-10см</label>
                                 </div>
                             </div>
@@ -65,15 +65,15 @@
                     <li class="sizes__item">
                         <img src="img/razmer_zakhoroneniya.png" alt="" title="" class="sizes__img">
                         <div class="sizes__wrapper">
-                            <input class="sizes__checkbox" type="checkbox" id="size3" name="size3" data-length="130" data-width="130">
+                            <input class="sizes__checkbox" type="checkbox" id="size3" name="size3" data-id="3" data-length="130" data-width="130">
                             <label for="size3" class="sizes__value">Размер 130*130</label>
                             <div class="sizes__options">
                                 <div class="sizes__option">
-                                    <input id="add5-3" type="radio" name="radio3" value="5">
+                                    <input id="add5-3" type="radio" name="radio3" value="5" data-value="5">
                                     <label for="add5-3">добавить +/-5см</label>
                                 </div>
                                 <div class="sizes__option">
-                                    <input id="add10-3" type="radio" name="radio3" value="10">
+                                    <input id="add10-3" type="radio" name="radio3" value="10" data-value="10">
                                     <label for="add10-3">добавить +/-10см</label>
                                 </div>
                             </div>
@@ -82,15 +82,15 @@
                     <li class="sizes__item">
                         <img src="img/razmer_zakhoroneniya.png" alt="" title="" class="sizes__img">
                         <div class="sizes__wrapper">
-                            <input class="sizes__checkbox" type="checkbox" id="size4" name="size4" data-length="135" data-width="135">
+                            <input class="sizes__checkbox" type="checkbox" id="size4" name="size4" data-id="4" data-length="135" data-width="135">
                             <label for="size4" class="sizes__value">Размер 135*135</label>
                             <div class="sizes__options">
                                 <div class="sizes__option">
-                                    <input id="add5-4" type="radio" name="radio4" value="5">
+                                    <input id="add5-4" type="radio" name="radio4" value="5" data-value="5">
                                     <label for="add5-4">добавить +/-5см</label>
                                 </div>
                                 <div class="sizes__option">
-                                    <input id="add10-4" type="radio" name="radio4" value="10">
+                                    <input id="add10-4" type="radio" name="radio4" value="10" data-value="10">
                                     <label for="add10-4">добавить +/-10см</label>
                                 </div>
                             </div>
@@ -99,132 +99,132 @@
                 </ul>
                 <ul class="sizes__boxes list-reset">
                     <li class="sizes__box box">
-                        <div class="box__left">
-                            <input class="box__checkbox" type="checkbox" id="size1.1" name="size1.1" data-length="120" data-width="120">
+                        <!-- <div class="box__left"> -->
+                            <input class="box__checkbox" type="checkbox" id="size1.1" name="size1.1" data-id="1" data-length="120" data-width="120">
                             <label for="size1.1" class="box__value">Размер 120*120</label>
-                        </div>
-                        <div class="box__options">
+                        <!-- </div> -->
+                        <!-- <div class="box__options">
                             <div class="box__option">
-                                <input id="add5-5" type="radio" name="radio5" value="5">
+                                <input id="add5-5" type="radio" name="radio5" value="5" data-value="5">
                                 <label for="add5-5">добавить +/-5см</label>
                             </div>
                             <div class="box__option">
-                                <input id="add10-5" type="radio" name="radio5" value="10">
+                                <input id="add10-5" type="radio" name="radio5" value="10" data-value="10">
                                 <label for="add10-5">добавить +/-10см</label>
                             </div>
-                        </div>
+                        </div> -->
                     </li>
                     <li class="sizes__box box">
-                        <div class="box__left">
-                            <input class="box__checkbox" type="checkbox" id="size2.1" name="size2.1" data-length="125" data-width="125">
+                        <!-- <div class="box__left"> -->
+                            <input class="box__checkbox" type="checkbox" id="size2.1" name="size2.1" data-id="2" data-length="125" data-width="125">
                             <label for="size2.1" class="box__value">Размер 125*125</label>
-                        </div>
-                        <div class="box__options">
+                        <!-- </div> -->
+                        <!-- <div class="box__options">
                             <div class="box__option">
-                                <input id="add5-6" type="radio" name="radio6" value="5">
+                                <input id="add5-6" type="radio" name="radio6" value="5" data-value="5">
                                 <label for="add5-6">добавить +/-5см</label>
                             </div>
                             <div class="box__option">
-                                <input id="add10-6" type="radio" name="radio6" value="10">
+                                <input id="add10-6" type="radio" name="radio6" value="10" data-value="10">
                                 <label for="add10-6">добавить +/-10см</label>
                             </div>
-                        </div>
+                        </div> -->
                     </li>
                     <li class="sizes__box box">
-                        <div class="box__left">
-                            <input class="box__checkbox" type="checkbox" id="size3.1" name="size3.1" data-length="130" data-width="130">
+                        <!-- <div class="box__left"> -->
+                            <input class="box__checkbox" type="checkbox" id="size3.1" name="size3.1" data-id="3" data-length="130" data-width="130">
                             <label for="size3.1" class="box__value">Размер 130*130</label>
-                        </div>
-                        <div class="box__options">
+                        <!-- </div> -->
+                        <!-- <div class="box__options">
                             <div class="box__option">
-                                <input id="add5-7" type="radio" name="radio7" value="5">
+                                <input id="add5-7" type="radio" name="radio7" value="5" data-value="5">
                                 <label for="add5-7">добавить +/-5см</label>
                             </div>
                             <div class="box__option">
-                                <input id="add10-7" type="radio" name="radio7" value="10">
+                                <input id="add10-7" type="radio" name="radio7" value="10" data-value="10">
                                 <label for="add10-7">добавить +/-10см</label>
                             </div>
-                        </div>
+                        </div> -->
                     </li>
                     <li class="sizes__box box">
-                        <div class="box__left">
-                            <input class="box__checkbox" type="checkbox" id="size4.1" name="size4.1" data-length="135" data-width="135">
+                        <!-- <div class="box__left"> -->
+                            <input class="box__checkbox" type="checkbox" id="size4.1" name="size4.1" data-id="4" data-length="135" data-width="135">
                             <label for="size4.1" class="box__value">Размер 135*135</label>
-                        </div>
-                        <div class="box__options">
+                        <!-- </div> -->
+                        <!-- <div class="box__options">
                             <div class="box__option">
-                                <input id="add5-8" type="radio" name="radio8" value="5">
+                                <input id="add5-8" type="radio" name="radio8" value="5" data-value="5">
                                 <label for="add5-8">добавить +/-5см</label>
                             </div>
                             <div class="box__option">
-                                <input id="add10-8" type="radio" name="radio8" value="10">
+                                <input id="add10-8" type="radio" name="radio8" value="10" data-value="10">
                                 <label for="add10-8">добавить +/-10см</label>
                             </div>
-                        </div>
+                        </div> -->
                     </li>
                     <li class="sizes__box box">
-                        <div class="box__left">
-                            <input class="box__checkbox" type="checkbox" id="size5.1" name="size5.1" data-length="140" data-width="140">
+                        <!-- <div class="box__left"> -->
+                            <input class="box__checkbox" type="checkbox" id="size5.1" name="size5.1" data-id="5" data-length="140" data-width="140">
                             <label for="size5.1" class="box__value">Размер 140*140</label>
-                        </div>
-                        <div class="box__options">
+                        <!-- </div> -->
+                        <!-- <div class="box__options">
                             <div class="box__option">
-                                <input id="add5-9" type="radio" name="radio9" value="5">
+                                <input id="add5-9" type="radio" name="radio9" value="5" data-value="5">
                                 <label for="add5-9">добавить +/-5см</label>
                             </div>
                             <div class="box__option">
-                                <input id="add10-9" type="radio" name="radio9" value="10">
+                                <input id="add10-9" type="radio" name="radio9" value="10" data-value="10">
                                 <label for="add10-9">добавить +/-10см</label>
                             </div>
-                        </div>
+                        </div> -->
                     </li>
                     <li class="sizes__box box">
-                        <div class="box__left">
-                            <input class="box__checkbox" type="checkbox" id="size6.1" name="size6.1" data-length="145" data-width="145">
+                        <!-- <div class="box__left"> -->
+                            <input class="box__checkbox" type="checkbox" id="size6.1" name="size6.1" data-id="6" data-length="145" data-width="145">
                             <label for="size6.1" class="box__value">Размер 145*145</label>
-                        </div>
-                        <div class="box__options">
+                        <!-- </div> -->
+                        <!-- <div class="box__options">
                             <div class="box__option">
-                                <input id="add5-10" type="radio" name="radio10" value="5">
+                                <input id="add5-10" type="radio" name="radio10" value="5" data-value="5">
                                 <label for="add5-10">добавить +/-5см</label>
                             </div>
                             <div class="box__option">
-                                <input id="add10-10" type="radio" name="radio10" value="10">
+                                <input id="add10-10" type="radio" name="radio10" value="10" data-value="10">
                                 <label for="add10-10">добавить +/-10см</label>
                             </div>
-                        </div>
+                        </div> -->
                     </li>
                     <li class="sizes__box box">
-                        <div class="box__left">
-                            <input class="box__checkbox" type="checkbox" id="size7.1" name="size7.1" data-length="150" data-width="150">
+                        <!-- <div class="box__left"> -->
+                            <input class="box__checkbox" type="checkbox" id="size7.1" name="size7.1" data-id="7" data-length="150" data-width="150">
                             <label for="size7.1" class="box__value">Размер 150*150</label>
-                        </div>
-                        <div class="box__options">
+                        <!-- </div> -->
+                        <!-- <div class="box__options">
                             <div class="box__option">
-                                <input id="add5-11" type="radio" name="radio11" value="5">
+                                <input id="add5-11" type="radio" name="radio11" value="5" data-value="5">
                                 <label for="add5-11">добавить +/-5см</label>
                             </div>
                             <div class="box__option">
-                                <input id="add10-11" type="radio" name="radio11" value="10">
+                                <input id="add10-11" type="radio" name="radio11" value="10" data-value="10">
                                 <label for="add10-11">добавить +/-10см</label>
                             </div>
-                        </div>
+                        </div> -->
                     </li>
                     <li class="sizes__box box">
-                        <div class="box__left">
-                            <input class="box__checkbox" type="checkbox" id="size8.1" name="size8.1" data-length="155" data-width="155">
+                        <!-- <div class="box__left"> -->
+                            <input class="box__checkbox" type="checkbox" id="size8.1" name="size8.1" data-id="8" data-length="155" data-width="155">
                             <label for="size8.1" class="box__value">Размер 155*155</label>
-                        </div>
-                        <div class="box__options">
+                        <!-- </div> -->
+                        <!-- <div class="box__options">
                             <div class="box__option">
-                                <input id="add5-12" type="radio" name="radio12" value="5">
+                                <input id="add5-12" type="radio" name="radio12" value="5" data-value="5">
                                 <label for="add5-12">добавить +/-5см</label>
                             </div>
                             <div class="box__option">
-                                <input id="add10-12" type="radio" name="radio12" value="10">
+                                <input id="add10-12" type="radio" name="radio12" value="10" data-value="10">
                                 <label for="add10-12">добавить +/-10см</label>
                             </div>
-                        </div>
+                        </div> -->
                     </li>
                 </ul>
             </div>

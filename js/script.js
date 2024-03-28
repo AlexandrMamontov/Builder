@@ -4,8 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnNext = document.querySelector(".builder__next");
     const btnPrev = document.querySelector(".builder__prev");
     const sizeCounts = document.querySelector(".sizes__count");
+    const countSpan = document.querySelector('.sizes__count span');
 
-    cards.forEach(() => {
+    cards.forEach((card) => {
         const checkboxesBlock1 = document.querySelectorAll('.sizes__wrapper input[type="checkbox"]');
         const checkboxesBlock2 = document.querySelectorAll('.sizes__box input[type="checkbox"]');
         checkboxesBlock1.forEach(checkbox1 => {
@@ -34,8 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     })
-
-    
 
     // cards.forEach((card) => {
     //     const checkBox = card.querySelector(".sizes__checkbox");
@@ -89,33 +88,18 @@ document.addEventListener("DOMContentLoaded", function () {
     //     });
     // })
 
+    const checkboxes = document.querySelectorAll('.box__checkbox');
+    let checkedCount = 0;
+
+    checkboxes.forEach((checkbox) => {
+        if (checkbox.checked) {
+            checkedCount++;
+        }
+        countSpan.textContent = checkedCount;
+    });
+
     btnNext.addEventListener("click", function () {
         sizeCounts.style.display = "none";
         btnPrev.classList.remove("builder__prev--default");
     });
-
-
-    
-
-    // считаем кол-во выбранных чекбоксов
-
-    // const checkboxes = document.querySelectorAll('.box__checkbox');
-    // const countSpan = document.querySelector('.sizes__count span');
-    // let checkedCount = 0;
-
-    // function updateCheckedCount() {
-    //     checkedCount = 0;
-    //     checkboxes.forEach(checkbox => {
-    //         if (checkbox.checked) {
-    //             checkedCount++;
-    //         }
-    //     });
-    //     countSpan.textContent = checkedCount;
-    // }
-
-    // updateCheckedCount();
-
-    // checkboxes.forEach(checkbox => {
-    //     checkbox.addEventListener('change', updateCheckedCount);
-    // });
 });
