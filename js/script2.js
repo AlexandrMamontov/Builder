@@ -1,3 +1,8 @@
+// Функция для проверки, есть ли хотя бы один чекбокс с состоянием checked
+const checkIfAnyCheckboxChecked = () => {
+    return Array.from(document.querySelectorAll('.box__checkbox')).some(checkbox => checkbox.checked);
+};
+
 // Получаем все чекбоксы из карточек
 const cardCheckboxes = document.querySelectorAll('.sizes__checkbox');
 // Получаем все блоки с радиокнопками из карточек
@@ -16,8 +21,26 @@ cardCheckboxes.forEach((checkbox, index) => {
         if (matchingBottomCheckbox) {
             matchingBottomCheckbox.checked = checkbox.checked;
         }
+        // Обновляем количество .box__checkbox с состоянием checked
+        updateCheckedCount();
+
+        // Проверяем, есть ли хотя бы один чекбокс с состоянием checked и добавляем класс active
+        if (checkIfAnyCheckboxChecked()) {
+            document.querySelector('.builder__next').classList.remove('builder__next--default');
+        } else {
+            document.querySelector('.builder__next').classList.add('builder__next--default');
+        }
     });
 });
+
+// Обновляем количество .box__checkbox с состоянием checked в .sizes__count span
+const updateCheckedCount = () => {
+    const checkedCount = document.querySelectorAll('.box__checkbox:checked').length;
+    document.querySelector('.sizes__count span').textContent = checkedCount;
+};
+
+// Вызываем функцию для обновления количества при загрузке страницы
+updateCheckedCount();
 
 // Добавляем обработчики событий для чекбоксов из нижнего блока
 bottomCheckboxes.forEach(bottomCheckbox => {
@@ -30,6 +53,15 @@ bottomCheckboxes.forEach(bottomCheckbox => {
             // Отобразить блок с радиокнопками в соответствующей карточке
             const index = Array.from(cardCheckboxes).indexOf(matchingCardCheckbox);
             cardRadioBlocks[index].classList.toggle('options--active', bottomCheckbox.checked);
+        }
+        // Обновляем количество .box__checkbox с состоянием checked
+        updateCheckedCount();
+
+        // Проверяем, есть ли хотя бы один чекбокс с состоянием checked и добавляем класс active
+        if (checkIfAnyCheckboxChecked()) {
+            document.querySelector('.builder__next').classList.remove('builder__next--default');
+        } else {
+            document.querySelector('.builder__next').classList.add('builder__next--default');
         }
     });
 });
@@ -50,6 +82,15 @@ cardRadioOptions.forEach(radio => {
         const matchingBottomCheckbox = document.querySelector(`.box__checkbox[data-width="${totalWidth}"][data-length="${totalLength}"]`);
         if (matchingBottomCheckbox) {
             matchingBottomCheckbox.checked = true;
+        }
+        // Обновляем количество .box__checkbox с состоянием checked
+        updateCheckedCount();
+
+        // Проверяем, есть ли хотя бы один чекбокс с состоянием checked и добавляем класс active
+        if (checkIfAnyCheckboxChecked()) {
+            document.querySelector('.builder__next').classList.remove('builder__next--default');
+        } else {
+            document.querySelector('.builder__next').classList.add('builder__next--default');
         }
     });
 });

@@ -152,10 +152,7 @@ body {
     border: 1px solid #b2b2b2;
     margin-right: 15px;
     position: relative;
-    width: 30px;
-    height: 30px;
     background: transparent;
-    border: 1px solid #b2b2b2;
 }
 
 .sizes__checkbox:checked+label::before,
